@@ -1,4 +1,13 @@
 # rrtstar_dubins
-RRT* GUI for testing
+
+build this repository
+
+```
+$ cd ~/<your directory> 
+$ ./build.sh # build folder should be deleted
+$ cd build
+$ ./rrt-app
+```
+
 
 
