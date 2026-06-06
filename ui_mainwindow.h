@@ -87,7 +87,7 @@ public:
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setGeometry(QRect(3, 490, 394, 87));
-//        textBrowser->setAlignment(Qt::AlignCenter);
+        //        textBrowser->setAlignment(Qt::AlignCenter);
 
         MainWindow->setCentralWidget(centralWidget);
         retranslateUi(MainWindow);
@@ -97,29 +97,30 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "RRT*-CFS | Phat C. Vo in RML", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Motion simulation by Phat C. Vo in RML", Q_NULLPTR));
         startButton->setText(QApplication::translate("MainWindow", "Start", Q_NULLPTR));
         resetButton->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-//        textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-//                                                                   "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-//                                                                   "p, li { white-space: pre-wrap; }\n"
-//                                                                   "</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-//                                                                   "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Draw obstacles by clicking and dragging on the field.</p></body></html>", Q_NULLPTR));
-//        textBrowser->setText(QApplication::translate("MainWindow", "Draw obstacles by clicking and dragging on the field.", Q_NULLPTR));
+        //        textBrowser->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        //                                                                   "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+        //                                                                   "p, li { white-space: pre-wrap; }\n"
+        //                                                                   "</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+        //                                                                   "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Draw obstacles by clicking and dragging on the field.</p></body></html>", Q_NULLPTR));
+        //        textBrowser->setText(QApplication::translate("MainWindow", "Draw obstacles by clicking and dragging on the field.", Q_NULLPTR));
         stepSizeLabel->setText(QApplication::translate("MainWindow", "Step Size", Q_NULLPTR));
         stepSize->setText(QApplication::translate("MainWindow", "25", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "Max Iterations", Q_NULLPTR));
         maxIterations->setText(QApplication::translate("MainWindow", "5000", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "Status", Q_NULLPTR));
     } // retranslateUi
-
 };
 
-namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+namespace Ui
+{
+    class MainWindow : public Ui_MainWindow
+    {
+    };
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-
-#endif //RRTSTAR_CFS_DUBINS_UI_MAINWINDOW_H
+#endif // RRTSTAR_CFS_DUBINS_UI_MAINWINDOW_H
