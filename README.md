@@ -17,6 +17,13 @@ Quick build
 3. Run the built application:
    ./build/rrt-app
 
+Interactive usage — drawing obstacles
+- The GUI supports drawing rectangular obstacles interactively.
+- To draw an obstacle: press the left mouse button at one corner, drag to the opposite corner, then release. The rectangle will be added to the obstacle list and the scene will refresh.
+- The included launcher script simplifies running the app:
+   chmod +x run_app.sh
+   ./run_app.sh
+
 Notes & troubleshooting
 - If CMake reports a cache/source mismatch, delete the build directory and retry:
    rm -rf build
